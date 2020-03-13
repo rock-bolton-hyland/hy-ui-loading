@@ -1,0 +1,32 @@
+<mat-toolbar fxLayoutAlign="space-between center" color="primary">
+  Hyland Experience - Header
+  <button (click)="reload()">reload</button>
+</mat-toolbar>
+<mat-progress-bar *ngIf="submitting || loading; else barPlaceholder" mode="indeterminate"></mat-progress-bar>
+<div fxLayout="column" style="padding: 16px;">
+  <mat-form-field appearance="fill">
+    <input [disabled]="submitting || loading" type="text" matInput placeholder="name" [ngModel]="value">
+    <mat-label>Hello</mat-label>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input [disabled]="submitting || loading" type="text" matInput placeholder="name" [ngModel]="value">
+    <mat-label>Hello</mat-label>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input [disabled]="submitting || loading" type="text" matInput placeholder="name" [ngModel]="value">
+    <mat-label>Hello</mat-label>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <input [disabled]="submitting || loading" type="text" matInput placeholder="name" [ngModel]="value">
+    <mat-label>Hello</mat-label>
+  </mat-form-field>
+</div>
+<div style="text-align: right; margin: 16px;">
+  <button [disabled]="submitting || loading" mat-raised-button color="primary" (click)="submit()">
+    SUBMIT
+  </button>
+</div>
+
+<ng-template #barPlaceholder>
+  <div style="height: 4px; width: 100%;"></div>
+</ng-template>
