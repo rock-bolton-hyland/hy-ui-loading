@@ -1,10 +1,14 @@
 :host {
-  background: #33333333;
-  width: 100%;
-  height: 100%;
+  background: #44444444;
   position: absolute;
+  z-index: 9;
+  display: none;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
-:host.hide {
-  display: none;
+:host.visible {
+  display: block;
 }
