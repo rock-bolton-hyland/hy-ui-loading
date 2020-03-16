@@ -13,7 +13,7 @@ export class ButtonLoaderComponent implements OnInit {
     this.submitting = true;
     setTimeout(()=>{
       this.submitting = false;
-    }, 5000)
+    }, 50000)
   }
 
   ngOnInit() {

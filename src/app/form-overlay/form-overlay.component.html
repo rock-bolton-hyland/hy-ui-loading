@@ -1,0 +1,11 @@
+<mat-progress-bar *ngIf="submitting" mode="indeterminate"></mat-progress-bar>
+<div>
+  <div style="position: relative;">
+    <div class="overlay" *ngIf="submitting" (click)="foc()">
+      <div #name cdkTrapFocus></div>
+    </div>
+    <div class="content">
+      <ng-content></ng-content>
+    </div>
+  </div>
+</div>

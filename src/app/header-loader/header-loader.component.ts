@@ -13,7 +13,7 @@ export class HeaderLoaderComponent implements OnInit {
     this.submitting = true;
     setTimeout(()=>{
       this.submitting = false;
-    }, 5000)
+    }, 10000)
   }
   ngOnInit() {
     this.reload();
@@ -25,6 +25,6 @@ export class HeaderLoaderComponent implements OnInit {
     setTimeout(()=>{
       this.value = "initial value";
       this.loading = false;
-    }, 5000)
+    }, 1000)
   }
 }
