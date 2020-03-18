@@ -2,7 +2,7 @@
 <div>
   <div style="position: relative;">
     <div class="overlay" *ngIf="submitting" (click)="foc()">
-      <div #name cdkTrapFocus></div>
+      <div tabindex="0" cdkTrapFocus></div>
     </div>
     <div class="content">
       <ng-content></ng-content>
